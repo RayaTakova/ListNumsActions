@@ -28,9 +28,8 @@ namespace ListNumsActions
                         break;
                         
                     case "del":
-                        
-                        
-
+                        element = int.Parse(cmd[1]);
+                        nums.Remove(element);
                         break;
                         
                     case "contains":
