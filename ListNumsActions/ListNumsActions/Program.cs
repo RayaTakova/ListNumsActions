@@ -6,6 +6,8 @@ namespace ListNumsActions
 {
     class Program
     {
+        
+
         static void Main(string[] args)
         {
             List<int> nums = Console.ReadLine().Split().Select(int.Parse).ToList();
@@ -20,30 +22,48 @@ namespace ListNumsActions
                 switch (command)
                 {
                     case "ins":
+
                         var index = int.Parse(cmd[1]);
                         var element = int.Parse(cmd[2]);
                         nums.Insert(index, element);
-
-
                         break;
                     case "del":
                         //TODO
                         break;
                     case "contains":
 
-                        //TODO
+                        var element = int.Parse(cmd[1]);
+                        if (nums.Contains(element))
+                        {
+                            Console.WriteLine("YES");
+                        }
+                        else
+                        {
+                            Console.WriteLine("NO");
+                        }
+
                         break;
                     case "remove":
                         
                         
                         break;
 
-                    //TODO
+
+                    
+
+                    case "print":
+                        Console.WriteLine(string.Join(" ", nums));
+                        break;
+                    
+
 
                     default:
                         break;
+
                 }
+
             }
+            
         }
     }
 }
