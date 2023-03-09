@@ -32,7 +32,7 @@ namespace ListNumsActions
                         break;
                     case "contains":
 
-                        var element = int.Parse(cmd[1]);
+                        element = int.Parse(cmd[1]);
                         if (nums.Contains(element))
                         {
                             Console.WriteLine("YES");
@@ -48,8 +48,6 @@ namespace ListNumsActions
                         
                         break;
 
-
-                    
 
                     case "print":
                         Console.WriteLine(string.Join(" ", nums));
