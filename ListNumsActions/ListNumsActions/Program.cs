@@ -29,9 +29,16 @@ namespace ListNumsActions
                         //TODO
                         break;
                     case "remove":
-                        //TODO
+                        int index = int.Parse(cmd[1]);
+                        nums.RemoveAt(index);
                         break;
-                    //TODO
+                    case "cut":
+                        int num = int.Parse(cmd[1]);
+                        for (int i = 0; i < num; i++)
+                        {
+                            nums.RemoveAt(0);
+                        }
+                        break;
 
                     default:
                         break;
