@@ -22,14 +22,15 @@ namespace ListNumsActions
                 switch (command)
                 {
                     case "ins":
-
                         var index = int.Parse(cmd[1]);
                         var element = int.Parse(cmd[2]);
                         nums.Insert(index, element);
                         break;
+                        
                     case "del":
                         //TODO
                         break;
+                        
                     case "contains":
 
                         element = int.Parse(cmd[1]);
@@ -41,19 +42,24 @@ namespace ListNumsActions
                         {
                             Console.WriteLine("NO");
                         }
-
                         break;
+                        
                     case "remove":
-                        
-                        
+                        int index = int.Parse(cmd[1]);
+                        nums.RemoveAt(index);
                         break;
-
+                        
+                    case "cut":
+                        int num = int.Parse(cmd[1]);
+                        for (int i = 0; i < num; i++)
+                        {
+                            nums.RemoveAt(0);
+                        }
+                        break;                                               
 
                     case "print":
                         Console.WriteLine(string.Join(" ", nums));
-                        break;
-                    
-
+                        break;                  
 
                     default:
                         break;
