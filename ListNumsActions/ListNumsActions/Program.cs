@@ -23,7 +23,9 @@ namespace ListNumsActions
                         //TODO
                         break;
                     case "del":
-                        //TODO
+                        
+                        
+
                         break;
                     case "contains":
                         //TODO
