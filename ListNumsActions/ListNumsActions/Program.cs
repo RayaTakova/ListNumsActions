@@ -45,7 +45,7 @@ namespace ListNumsActions
                         break;
                         
                     case "remove":
-                        int index = int.Parse(cmd[1]);
+                        index = int.Parse(cmd[1]);
                         nums.RemoveAt(index);
                         break;
                         
