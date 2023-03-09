@@ -20,17 +20,24 @@ namespace ListNumsActions
                 switch (command)
                 {
                     case "ins":
-                        //TODO
+                        var index = int.Parse(cmd[1]);
+                        var element = int.Parse(cmd[2]);
+                        nums.Insert(index, element);
+
+
                         break;
                     case "del":
                         //TODO
                         break;
                     case "contains":
+
                         //TODO
                         break;
                     case "remove":
-                        //TODO
+                        
+                        
                         break;
+
                     //TODO
 
                     default:
